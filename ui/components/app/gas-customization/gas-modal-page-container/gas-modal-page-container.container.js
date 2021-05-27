@@ -144,7 +144,6 @@ const mapStateToProps = (state, ownProps) => {
     customGasPrice,
     customGasLimit: calcCustomGasLimit(customModalGasLimitInHex),
     customGasTotal,
-    newTotalFiat,
     customPriceIsSafe:
       (isMainnet || process.env.IN_TEST) && isGasEstimate
         ? isCustomPriceSafe(state)
