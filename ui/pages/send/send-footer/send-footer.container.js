@@ -1,7 +1,6 @@
 import { connect } from 'react-redux';
 import {
   addToAddressBook,
-  clearSend,
   signTokenTx,
   signTx,
   updateTransaction,
@@ -30,6 +29,7 @@ import {
   getSendToAccounts,
   getUnapprovedTxs,
 } from '../../../ducks/metamask/metamask';
+import { clearSend } from '../../../ducks/send/send.duck';
 import SendFooter from './send-footer.component';
 import {
   addressIsNew,

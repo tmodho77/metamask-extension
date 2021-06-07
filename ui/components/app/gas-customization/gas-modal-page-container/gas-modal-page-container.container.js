@@ -2,13 +2,9 @@ import { connect } from 'react-redux';
 import { addHexPrefix } from '../../../../../app/scripts/lib/util';
 import {
   hideModal,
-  setGasLimit,
-  setGasPrice,
   createRetryTransaction,
   createSpeedUpTransaction,
   hideSidebar,
-  updateSendAmount,
-  setGasTotal,
   updateTransaction,
 } from '../../../../store/actions';
 import {
@@ -19,6 +15,10 @@ import {
 } from '../../../../ducks/gas/gas.duck';
 import {
   hideGasButtonGroup,
+  setGasLimit,
+  setGasPrice,
+  setGasTotal,
+  updateSendAmount,
   updateSendErrors,
 } from '../../../../ducks/send/send.duck';
 import {
